@@ -25,21 +25,22 @@ class phone {
 	}
 }
 
+class Lg extends phone {
 
-class Lg extends phone{
-	
 	public void lgPay() {
 		System.out.println("Lg페이 기능");
 	}
+
 	public void hand() {
 		System.out.println("손동작 기능");
+	}
+}
 
-class Samsung extends phone{
+class Samsung extends phone {
 	public void samsung() {
 		System.out.println("지문인식 기능");
 		System.out.println("울트라 줌");
 		System.out.println("삼성페이");
-
 	}
 }
 
@@ -51,7 +52,6 @@ public class Main {
 		Lg lg = new Lg();
 
 		Samsung ss = new Samsung();
-
 
 		while (true) {
 			System.out.println("1. 아이폰");
