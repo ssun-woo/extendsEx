@@ -25,10 +25,21 @@ class phone {
 	}
 }
 
+class Lg extends phone{
+	
+	public void lgPay() {
+		System.out.println("Lg페이 기능");
+	}
+	public void hand() {
+		System.out.println("손동작 기능");
+	}
+}
+
 public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		Lg lg = new Lg();
 
 		while (true) {
 			System.out.println("1. 아이폰");
@@ -46,6 +57,13 @@ public class Main {
 				break;
 			case 3:
 				System.out.println("LG 가능한 기능 보기");
+				lg.on();
+				lg.off();
+				lg.SN("LG 시리얼 넘버");
+				lg.message();
+				lg.call();
+				lg.lgPay();
+				lg.hand();
 				break;
 			default:
 				System.out.println("잘못된 입력");
