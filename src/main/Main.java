@@ -25,6 +25,7 @@ class phone {
 	}
 }
 
+
 class Lg extends phone{
 	
 	public void lgPay() {
@@ -32,6 +33,13 @@ class Lg extends phone{
 	}
 	public void hand() {
 		System.out.println("손동작 기능");
+
+class Samsung extends phone{
+	public void samsung() {
+		System.out.println("지문인식 기능");
+		System.out.println("울트라 줌");
+		System.out.println("삼성페이");
+
 	}
 }
 
@@ -39,7 +47,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+
 		Lg lg = new Lg();
+
+		Samsung ss = new Samsung();
+
 
 		while (true) {
 			System.out.println("1. 아이폰");
@@ -54,6 +66,12 @@ public class Main {
 				break;
 			case 2:
 				System.out.println("삼성 가능한 기능 보기");
+				ss.on();
+				ss.off();
+				ss.SN("20230428");
+				ss.message();
+				ss.call();
+				ss.samsung();
 				break;
 			case 3:
 				System.out.println("LG 가능한 기능 보기");
